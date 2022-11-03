@@ -1,0 +1,58 @@
+[{
+        "name": "WATCH",
+        "brand": "ALBA",
+        "price": 2700,
+        "img": "https://images-eu.ssl-images-amazon.com/images/G/42/SL/March/XCM_Manual_1412757_4582627_Egypt_EG_SL_Watches_Men_Alba_440x440_2X.jpg",
+        "info": "leather digital watch..",
+        "rating": 4.5
+    },
+    {
+        "name": "WATCH",
+        "brand": "POLAR",
+        "price": 4300,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVO_0kpVw0j1QW0uJfHczM6I4Elu4_xJ9Vg&usqp=CAU",
+        "info": "green digital watch..",
+        "rating": 4.5
+    },
+    {
+        "name": "WATCH",
+        "brand": "SWATCH",
+        "price": 1300,
+        "img": "https://cdn.shopify.com/s/files/1/0559/6587/6375/products/2011184_200x.jpg?v=1660142906",
+        "info": "grey digital watch..",
+        "rating": 3.5
+    },
+    {
+        "name": "WATCH",
+        "brand": "AQUAS BLUE",
+        "price": 3000,
+        "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_7AjLfKuSXVn5KmPaEnHd1asFqxIMRw5RTtYPsvEc8_BNpSFL8veUMoCYOu4Ok85s0vyyxS3CQw&usqp=CAc",
+        "info": "grey digital watch..",
+        "rating": 4.5
+    },
+    {
+        "name": "WATCH",
+        "brand": "TISOOT",
+        "price": 5000,
+        "img": "https://cdn.shopify.com/s/files/1/0559/6587/6375/products/LK292G_200x.jpg?v=1664359922",
+        "info": "silver digital watch..",
+        "rating": 4
+    },
+    {
+        "name": "WATCH",
+        "brand": "XAIOMI",
+        "price": 2500,
+        "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSKq2fFePCh0KAmC5PkpCgNfkOkrBE-vwF0zcw-bACMvqgHGoWPIJrkccpB1AAKsnXZXPZqP1MBhtSV&usqp=CAc",
+        "info": "black digital watch..",
+        "rating": 4.5
+    },
+    {
+        "name": "WATCH",
+        "brand": "CAMO",
+        "price": 5600,
+        "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTgioZOD92vhjxYp_MQtjLWCv8LOuBlpliyFiKUYz1WzXoQihZzLIK2tC5qUEd_SCLopEmPPIrokw&usqp=CAc",
+        "info": "red digital watch..",
+        "rating": 4.5
+    }
+
+]

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Watches Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <p class="logo-name">uranus</p>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li id="cart"><i class="fa-light fa-cart-shopping nav-icon"></i>cart
+                        <div class="hide">
+                            <div class="box">
+                                <h3 class="total-price">Cart Subtotal: $<span class="fees"></span></h3>
+                                <a class="checkout" href="http://">Go To Checkout</a>
+                                <div class="innerBox" id="box">
+                                    <!-- <div class="cart-item">
+                                        <div class="cart-image"><img src="./images/download.jpg" alt="" class="image"></div>
+                                        <div class="cart-info">
+                                            <h3 class="title">Swatch</h3>
+                                            <p class="price"><span>$</span></p>
+                                            <div class="count">
+                                                <div class="minus-count"><i class="fa-light fa-minus"></i></div>
+                                                <div class="number">0</div>
+                                                <div class="minus-count"><i class="fa-light fa-plus"></i></div>
+                                                <div class="delete"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item">
+                                        <div class="cart-image"><img src="./images/download.jpg" alt="" class="image"></div>
+                                        <div class="cart-info">
+                                            <h3 class="title">Swatch</h3>
+                                            <p class="price"><span>$</span></p>
+                                            <div class="count">
+                                                <div class="minus-count"><i class="fa-light fa-minus"></i></div>
+                                                <div class="number">0</div>
+                                                <div class="minus-count"><i class="fa-light fa-plus"></i></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="cart-item">
+                                        <div class="cart-image"><img src="./images/download.jpg" alt="" class="image"></div>
+                                        <div class="cart-info">
+                                            <h3 class="title">Swatch</h3>
+                                            <p class="price"><span>$</span></p>
+                                            <div class="count">
+                                                <div class="minus-count"><i class="fa-light fa-minus"></i></div>
+                                                <div class="number">0</div>
+                                                <div class="minus-count"><i class="fa-light fa-plus"></i></div>
+                                            </div>
+
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <ul class="account">
+                        <li class="register-link">register
+                            <a href=""></a>
+                        </li>
+                        <li class="login-link">login
+                            <a href=""></a>
+                        </li>
+                        <li>order tracking
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="search-bar"><input type="search" name="" id="serch-val" data-search-input>
+                <span class="search"><i class="fa-light fa-magnifying-glass"></i></span>
+            </div>
+            <div class="sort-catigory">
+                <h2 class="catigory">Watches</h2>
+                <select name="" id="" class="sort">
+                    <option value="Price" id="sort-price">Price</option>
+                    <option value="Rating" id="sort-rating">Rating</option>
+                </select>
+            </div>
+            <div class="feed-items">
+                <!-- <div class="card-item">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVO_0kpVw0j1QW0uJfHczM6I4Elu4_xJ9Vg&usqp=CAU" alt="" class="image"></div>
+                    <div class="info">
+                        <h3 class="title">Swatch</h3>
+                        <p class="discription">Lorem ipsum, dolor sit</p>
+                        <p class="price"><span>$</span></p>
+                        <span class="add">Add to Cart</span>
+                        <strong><a href="http://"></a>more..</strong>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div><img src="./images/download.jpg" alt="" class="image"></div>
+                    <div class="info">
+                        <h3 class="title">Swatch</h3>
+                        <p class="discription">Lorem ipsum, dolor sit</p>
+                        <p class="price"><span>$</span></p>
+                        <span class="add">Add to Cart</span>
+                        <strong><a href="http://"></a>more..</strong>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div><img src="./images/download.jpg" alt="" class="image"></div>
+                    <div class="info">
+                        <h3 class="title">Swatch</h3>
+                        <p class="discription">Lorem ipsum, dolor sit</p>
+                        <p class="price"><span>$</span></p>
+                        <span class="add">Add to Cart</span>
+                        <strong><a href="http://"></a>more..</strong>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div><img src="./images/download.jpg" alt="" class="image"></div>
+                    <div class="info">
+                        <h3 class="title">Swatch</h3>
+                        <p class="discription">Lorem ipsum, dolor sit</p>
+                        <p class="price"><span>$</span></p>
+                        <span class="add">Add to Cart</span>
+                        <strong><a href="http://"></a>more..</strong>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <footer>
+
+            <p>Copyright<span>©</span> 2022 Uranus , Inc. All rights reserved. </p>
+            <p> Designed & Developed by Vigor-Studio</p>
+            <div>
+                <a href="http://" class="pay"></a>
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

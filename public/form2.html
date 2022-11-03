@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <p class="logo-name">uranus</p>
+                <div class="line"></div>
+            </div>
+            <!-- <nav>
+                <ul class="nav-list">
+                    <li><i class="fa-light fa-cart-shopping nav-icon"></i>cart</li>
+                    <ul class="account">
+                        <li>register
+                            <a href=""></a>
+                        </li>
+                        <li>login
+                            <a href=""></a>
+                        </li>
+                        <li>order tracking
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav> -->
+        </header>
+        <main>
+            <form class="registration ">
+                <h2 class="catigory">Login</h2>
+                <div class="regi-bar">
+                    <input type="password" name="" id="password" placeholder="type your password here" required>
+                </div>
+                <div class="regi-bar">
+                    <input type="email" name="" id="email" placeholder="type a valid email here" required>
+                </div>
+                <button class="submit">submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>Copyright<span>©</span> 2022 Uranus , Inc. All rights reserved. </p>
+            <p> Designed & Developed by Vigor-Studio</p>
+            <div>
+                <a href="http://" class="pay"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const userPassword = document.querySelector("#password")
+        const userEmail = document.querySelector("#email")
+        const form = document.querySelector("form")
+        const baseUrl = "http://localhost:7000/api/user"
+
+        const login = async() => {
+            const password = userPassword.value
+            const email = userEmail.value
+            try {
+                const {
+                    data
+                } = await axios.post(baseUrl + '/login', {
+                    password,
+                    email
+                })
+            } catch (error) {
+                console.log(error.message)
+            }
+        }
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            login()
+            console.log("login success..")
+            window.location = "./index.html"
+        })
+    </script>
+</body>
+
+</html>
